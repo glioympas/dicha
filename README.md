@@ -7,3 +7,5 @@
 5) php artisan key:generate
 6) php artisan config:cache
 7) php artisan serve
+
+Visit localhost:8000
