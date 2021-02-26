@@ -7,11 +7,6 @@ use App\Http\Controllers\HomeController;
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 Route::group(['middleware' => ['auth', 'is_administrator']], function(){
 
 	Route::get('/', [ HomeController::class , 'home' ] )->name('home');
