@@ -1,0 +1,71 @@
+@import 'bootstrap';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+@import 'font_awesome';
+
+// Bootstrap
+@import '~select2/dist/css/select2';
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none;
+}
+
+.select2-selection.select2-selection--single {
+  border: 1px solid #ced4da;
+  height:calc(1.5em + .75rem + 2px);
+  padding-top: 6px;
+  width:100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top:6px;
+}
+
+.card-header {
+	background:#fff;
+}
+
+
+.main-content.requesting {
+	opacity:0.4;
+}
+
+.logo-container {
+
+  .remove-logo {
+  	cursor:pointer;
+  }
+
+  .no-logo {
+  	height:80px;
+  	width:250px;
+  	background-color:#ccc;
+  }
+
+  .current-logo {
+        cursor:pointer;
+  		height:80px;
+  		width:250px;
+  		background-size:cover;
+  		background-position:center;
+
+      &.no-edit-logo {
+          cursor:default;
+      }
+  }
+
+}
